@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<config>
+
+  <!-- ======== -->
+  <!-- SETTINGS -->
+  <!-- ======== -->
+  <settings>
+    <setting id="developerMode" value="true" />
+    <setting id="timeout_delay" value="30" />
+    <setting id="example_setting" value="example_value" />
+  </settings>
+
+  <!-- ================= -->
+  <!-- SPECIMEN MANIFEST -->
+  <!-- ================= -->
+  <component id="oak_tree_specimens">
+
+    <specimens>
+
+      <!-- 22-Our_Lords_Candle -->
+      <plant id="22-Our_Lords_Candle">
+
+        <images>
+          <image id="thumb">img/22-Our_Lords_Candle/22-Our_Lords_Candle_thumb.png</image>
+          <image id="painting">img/22-Our_Lords_Candle/22-Our_Lords_Candle_painting.png</image>
+          <image id="collections">img/22-Our_Lords_Candle/22-Our_Lords_Candle_collections.png</image>
+          <image id="nature">img/22-Our_Lords_Candle/22-Our_Lords_Candle_nature.png</image>
+        </images>
+
+        <text id="common_name">
+          <en>Chaparral Candle</en>
+          <es>Lorem</es>
+        </text>
+
+        <text id="scientific_name">
+          <en>Hesperoyucca whipplei</en>
+          <es>Hesperoyucca whipplei</es>
+        </text>
+
+        <text id="description">
+          <en>Often the dominant plant in large swaths of chaparral, chamise is a resinous plant that contributes to the fire hazard in these areas.  It is most appealing when its branches are tipped with plumes of tiny white flowers.</en>
+          <es>Spanish description of 22-Our_Lords_Candle here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et lorem sapien. Etiam laoreet vehicula quam non lobortis. Nullam dapibus sit amet massa non tincidunt. Vivamus nibh massa, facilisis a interdum ornare, tincidunt vitae augue. In lectus enim, efficitur vel risus vitae, facilisis pharetra purus.</es>
+        </text>
+
+      </plant>
+
+      <!-- 12-Lemonadeberry -->
+      <plant id="12-Lemonadeberry">
+
+        <images>
+          <image id="thumb">img/12-Lemonadeberry/12-Lemonadeberry_thumb.png</image>
+          <image id="painting">img/12-Lemonadeberry/12-Lemonadeberry_painting.png</image>
+          <image id="collections">img/12-Lemonadeberry/12-Lemonadeberry_collections.png</image>
+          <image id="nature">img/12-Lemonadeberry/12-Lemonadeberry_nature.png</image>
+        </images>
+
+        <text id="common_name">
+          <en>Lemonadeberry</en>
+          <es>Lorem</es>
+        </text>
+
+        <text id="scientific_name">
+          <en>Rhus integrifolia</en>
+          <es>Rhus integrifolia</es>
+        </text>
+
+        <text id="description">
+          <en>Often the dominant plant in large swaths of chaparral, chamise is a resinous plant that contributes to the fire hazard in these areas.  It is most appealing when its branches are tipped with plumes of tiny white flowers.</en>
+          <es>Spanish description of 12-Lemonadeberry here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et lorem sapien. Etiam laoreet vehicula quam non lobortis. Nullam dapibus sit amet massa non tincidunt. Vivamus nibh massa, facilisis a interdum ornare, tincidunt vitae augue. In lectus enim, efficitur vel risus vitae, facilisis pharetra purus.</es>
+        </text>
+
+      </plant>
+
+    </specimens>
+
+  </component>
+
+</config>
