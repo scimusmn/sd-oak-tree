@@ -13,7 +13,7 @@ define([ 'net/AppData'], function( AppData ){
 
     };
 
-    ScreenManager.addScreen = function(screen){
+    ScreenManager.addScreen = function(screen) {
         this.screens.push(screen);
     };
 

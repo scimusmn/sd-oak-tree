@@ -221,38 +221,55 @@ p {
 
 /* Main Screen */
 #screen_main {
-
+  background-color: #132D33;
 }
-#main_nav {
 
+/* Left-side content */
+.content-left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#main_nav img,
+#main_nav svg {
+  position: absolute;
+}
+#main_nav #tree_bg {
+  left: 135px;
+  top: 10px;
+}
+#main_nav svg {
+  left: 14px;
+  top: -22px;
+}
+#main_nav use {
+  cursor: pointer;
+}
+#main_nav #Plus path {
+  /*fill: #444;
+  transition: .3s fill;*/
 }
 
 .content-right{
 
-  background-color: #E2D9C2;
-
-}
-
-#screen_viewer #controls_bar {
-
-  bottom: 0px;
-  position: fixed;
-  background: #333;
-  height: 170px;
-  bottom: 0px;
-  padding-bottom: 70px;
-
-  box-shadow: 0px -3px 4px rgba(44,44,44,0.4);
+  position: absolute;
+  right: 0px;
+  width: 443px;
+  height: 100%;
+  background-color: #999689;
+  box-shadow: -5px -3px 15px rgba(22,22,22,0.6);
 
 }
 
 #home_bar {
 
+  /*box-shadow: 0px -3px 4px rgba(44,44,44,0.4);*/
   position: fixed;
   height: 70px;
   bottom: 0px;
   text-align: center;
-  background: #07292F;
+  background: #08292F;
   color: white;
 
 }
