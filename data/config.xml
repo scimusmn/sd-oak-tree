@@ -17,59 +17,63 @@
 
     <specimens>
 
-      <!-- 22-Our_Lords_Candle -->
-      <plant id="22-Our_Lords_Candle">
+      <!-- Mule Deer -->
+      <specimen id="mule_deer" img="img/mule_deer.jpg">
 
-        <images>
-          <image id="thumb">img/22-Our_Lords_Candle/22-Our_Lords_Candle_thumb.png</image>
-          <image id="painting">img/22-Our_Lords_Candle/22-Our_Lords_Candle_painting.png</image>
-          <image id="collections">img/22-Our_Lords_Candle/22-Our_Lords_Candle_collections.png</image>
-          <image id="nature">img/22-Our_Lords_Candle/22-Our_Lords_Candle_nature.png</image>
-        </images>
-
-        <text id="common_name">
-          <en>Chaparral Candle</en>
-          <es>Lorem</es>
+        <text id="common">
+          <en>Mule Deer</en>
+          <es>Venado bura</es>
         </text>
 
-        <text id="scientific_name">
-          <en>Hesperoyucca whipplei</en>
-          <es>Hesperoyucca whipplei</es>
+        <text id="scientific">
+          Odocoileus hemionus
         </text>
 
         <text id="description">
-          <en>Often the dominant plant in large swaths of chaparral, chamise is a resinous plant that contributes to the fire hazard in these areas.  It is most appealing when its branches are tipped with plumes of tiny white flowers.</en>
-          <es>Spanish description of 22-Our_Lords_Candle here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et lorem sapien. Etiam laoreet vehicula quam non lobortis. Nullam dapibus sit amet massa non tincidunt. Vivamus nibh massa, facilisis a interdum ornare, tincidunt vitae augue. In lectus enim, efficitur vel risus vitae, facilisis pharetra purus.</es>
+          <en>Mule Deer need extra fat reserves to help them get through winter in the mountains. Acorns are an important fall food source, with high nutritional value, that helps them build up that much-needed fat. </en>
+          <es>Los venados bura necesitan reservas adicionales de grasa para ayudarles a soportar el invierno en las montañas.  Las bellotas son una importante fuente de alimento en el otoño, con alto valor nutritivo, que les ayuda a acumular esa grasa tan necesaria.</es>
         </text>
 
-      </plant>
+      </specimen>
 
-      <!-- 12-Lemonadeberry -->
-      <plant id="12-Lemonadeberry">
+      <!-- Acorn Weevil -->
+      <specimen id="acorn_weevil" img="img/acorn_weevil.jpg">
 
-        <images>
-          <image id="thumb">img/12-Lemonadeberry/12-Lemonadeberry_thumb.png</image>
-          <image id="painting">img/12-Lemonadeberry/12-Lemonadeberry_painting.png</image>
-          <image id="collections">img/12-Lemonadeberry/12-Lemonadeberry_collections.png</image>
-          <image id="nature">img/12-Lemonadeberry/12-Lemonadeberry_nature.png</image>
-        </images>
-
-        <text id="common_name">
-          <en>Lemonadeberry</en>
-          <es>Lorem</es>
+        <text id="common">
+          <en>Acorn Weevil</en>
+          <es>Curculio occidentis</es>
         </text>
 
-        <text id="scientific_name">
-          <en>Rhus integrifolia</en>
-          <es>Rhus integrifolia</es>
+        <text id="scientific">
+          Curculio occidentis
         </text>
 
         <text id="description">
-          <en>Often the dominant plant in large swaths of chaparral, chamise is a resinous plant that contributes to the fire hazard in these areas.  It is most appealing when its branches are tipped with plumes of tiny white flowers.</en>
-          <es>Spanish description of 12-Lemonadeberry here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et lorem sapien. Etiam laoreet vehicula quam non lobortis. Nullam dapibus sit amet massa non tincidunt. Vivamus nibh massa, facilisis a interdum ornare, tincidunt vitae augue. In lectus enim, efficitur vel risus vitae, facilisis pharetra purus.</es>
+          <en>An Acorn Weevil larva hibernates in the soil through winter. In the spring it will emerge ready to feed on, and deposit an egg inside, an acorn. After the egg hatches, the new larva will eat its way out of the acorn and fall to the ground to hibernate—starting the cycle all over again.</en>
+          <es>La larva de una gorgojo de la bellota hiberna en la tierra a lo largo del invierno.  En la primavera emerge listo  para alimentarse de una bellota y depositar un huevo dentro de la misma.
+          </es>
         </text>
 
-      </plant>
+      </specimen>
+
+      <!-- Gray Squirrel -->
+      <specimen id="gray_squirrel" img="img/gray_squirrel.jpg">
+
+        <text id="common">
+          <en>Western Gray Squirrel</en>
+          <es>Ardilla gris occidental</es>
+        </text>
+
+        <text id="scientific">
+          Sciurus griseus
+        </text>
+
+        <text id="description">
+          <en>This Western Gray Squirrel is reaping the rewards of a busy gathering season. It spent the fall storing acorns in small holes in the ground called caches (pronounced CASH-ez). Now that it’s winter and food is scarce, the squirrel unearths its secret stash.</en>
+          <es>Esta ardilla gris occidental está disfrutando la recompensa de una ajetreada temporada de recolección. Pasó el otoño almacenando bellotas en pequeños huecos en el suelo.  Ahora que es invierno y la comida es escasa, la ardilla desentierra su reserva secreta.</es>
+        </text>
+
+      </specimen>
 
     </specimens>
 
