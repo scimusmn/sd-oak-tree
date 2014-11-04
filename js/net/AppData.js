@@ -34,60 +34,60 @@ define([], function(){
 
         switch ( key ) {
             case 26:
-                return 'squirrel';
+                return 'gray_squirrel';
             case 27:
-                return 'deer';
+                return 'mule_deer';
             case 28:
-                return 'insect';
+                return 'acorn_weevil';
             case 29:
-                return 'squirrel';
+                return 'gray_squirrel';
             case 30:
-                return 'deer';
+                return 'mule_deer';
             case 31:
-                return 'insect';
+                return 'acorn_weevil';
             case 32:
-                return 'squirrel';
+                return 'gray_squirrel';
             case 33:
-                return 'deer';
+                return 'mule_deer';
             case 34:
-                return 'insect';
+                return 'acorn_weevil';
             case 35:
-                return 'squirrel';
+                return 'gray_squirrel';
             case 36:
-                return 'deer';
+                return 'mule_deer';
             case 37:
-                return 'insect';
+                return 'acorn_weevil';
             case 38:
-                return 'squirrel';
+                return 'gray_squirrel';
             case 39:
-                return 'deer';
+                return 'mule_deer';
             case 40:
-                return 'insect';
+                return 'acorn_weevil';
             case 41:
-                return 'squirrel';
+                return 'gray_squirrel';
             case 42:
-                return 'deer';
+                return 'mule_deer';
             case 43:
-                return 'insect';
+                return 'acorn_weevil';
             case 44:
-                return 'squirrel';
+                return 'gray_squirrel';
             case 45:
-                return 'deer';
+                return 'mule_deer';
             case 46:
-                return 'insect';
+                return 'acorn_weevil';
             case 47:
-                return 'squirrel';
+                return 'gray_squirrel';
             case 48:
-                return 'deer';
+                return 'mule_deer';
             case 49:
-                return 'insect';
+                return 'acorn_weevil';
             case 50:
-                return 'squirrel';
+                return 'gray_squirrel';
             case 51:
-                return 'deer';
+                return 'mule_deer';
 
             default:
-                return 'deer';
+                return 'mule_deer';
         }
 
     };

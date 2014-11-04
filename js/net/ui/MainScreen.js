@@ -24,10 +24,31 @@ define([ 'net/AppData', 'net/ui/ScreenManager', 'tween' ], function( AppData,  S
     // featureSpecimen() | Transition to feature selected specimen
     MainScreen.prototype.featureSpecimen = function( specId, specBtn ){
 
+        console.log('featureSpecimen(): '+ specId);
+
         AppData.setFeatureSpecimen( specId );
         $('#specimen_display').attr('src', AppData);
 
-        console.log('show spec: '+ specId);
+        //TODO: Set text and image from xml
+        var specConfig = $(AppData.configXML).find('specimens specimen[id="'+specId+'"]').first();
+
+        var imgSrc = $(specConfig).attr("img");
+        $( "#specimen_display img" ).attr('src', imgSrc);
+
+        var commonEN = $(specConfig).find("text[id='common'] en").first().text();
+        var commonES = $(specConfig).find("text[id='common'] es").first().text();
+
+        var scientific = $(specConfig).find("text[id='scientific']").first().text();
+
+        var descriptionEN = $(specConfig).find("text[id='description'] en").first().text();
+        var descriptionES = $(specConfig).find("text[id='description'] es").first().text();
+
+        $("#info_container #common_name.en").html( commonEN );
+        $("#info_container #common_name.es").html( commonES );
+        $("#info_container #scientific_name").html( scientific );
+        $("#info_container #description.en").html( descriptionEN );
+        $("#info_container #description.es").html( descriptionES );
+
         this.transitionInFeature();
 
     };
@@ -36,14 +57,14 @@ define([ 'net/AppData', 'net/ui/ScreenManager', 'tween' ], function( AppData,  S
     MainScreen.prototype.transitionInFeature = function( ){
 
         //Main Nav
-        TweenLite.to( $( "#main_nav" ), 1, { css: { opacity:0, zindex:0 }, ease:Power2.easeOut, onComplete:function(){
+        TweenLite.to( $( "#main_nav" ), 1, { css: { opacity:0, zIndex:0 }, ease:Power2.easeOut, onComplete:function(){
             $( "#main_nav" ).hide();
         } } );
 
         //Image
         $( "#specimen_display" ).show();
         TweenLite.set( $( "#specimen_display" ), { css: { opacity:0 } } );
-        TweenLite.to( $( "#specimen_display" ), 1, { css: { opacity:1, zIndex:2 }, delay:0.2, ease:Power2.easeOut } );
+        TweenLite.to( $( "#specimen_display" ), 1, { css: { opacity:1, zIndex:2 }, delay:0.4, ease:Power2.easeOut } );
 
         //Home bar
         $("#home_bar").show();
@@ -62,7 +83,7 @@ define([ 'net/AppData', 'net/ui/ScreenManager', 'tween' ], function( AppData,  S
         //Main Nav
         $( "#main_nav" ).show();
         TweenLite.set( $( "#main_nav" ), { css: { opacity:0 } } );
-        TweenLite.to( $( "#main_nav" ), 1, { css: { opacity:1, zIndex:2 }, delay:0.05, ease:Power2.easeOut } );
+        TweenLite.to( $( "#main_nav" ), 1, { css: { opacity:1, zIndex:2 }, delay:0.5, ease:Power2.easeOut } );
 
         //Image
         TweenLite.to( $( "#specimen_display" ), 1, { css: { opacity:0, zindex:0 }, ease:Power2.easeOut, onComplete:function(){
