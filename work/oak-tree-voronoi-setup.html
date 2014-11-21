@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Oak Tree | Veronoi</title>
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <img src="oak-tree-bg.png" style="position:absolute; top:0px; left:0px;"/>
+    <textarea id="txtoutput" style="position:fixed;right:0px;height:90%;width:300px;margin:20px;"></textarea>
+  </body>
+
+  <script type="text/javascript">
+
+    var allpoints = [];
+
+    function setup() {
+
+      allpoints = {sites: {}};
+
+      //listen for clicks
+      $('img').click(function(e) {
+
+        var xx = e.pageX;
+        var yy = e.pageY;
+        var specimenId = prompt("ID for x:"+xx+", y:"+yy+"", "");
+
+        addPoint(xx,yy,specimenId);
+
+      });
+
+    }
+
+    function addPoint(_x,_y,_id){
+
+      allpoints.sites[_id] = {x: _x, y: _y};
+
+      updateOutput(allpoints);
+
+    }
+
+    function updateOutput(val){
+      //Send to text area
+      document.getElementById("txtoutput").value = JSON.stringify(val);
+    }
+
+    setup();
+
+  </script>
+
+</html>

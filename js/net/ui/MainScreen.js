@@ -1,4 +1,4 @@
-define([ 'net/AppData', 'net/ui/ScreenManager', 'tween' ], function( AppData,  ScreenManager ){
+define([ 'net/AppData', 'net/ui/ScreenManager', 'net/ui/VoronoiLayer', 'tween' ], function( AppData,  ScreenManager, VoronoiLayer ){
 
     function MainScreen( containerDiv ){
 
@@ -12,6 +12,79 @@ define([ 'net/AppData', 'net/ui/ScreenManager', 'tween' ], function( AppData,  S
     MainScreen.prototype.init = function() {
 
         this.refreshButtonListeners();
+
+        var sitePoints = {
+                "owl":{
+                    "x":264,
+                    "y":277
+                },
+                "deer":{
+                    "x":131,
+                    "y":604
+                },
+                "red_squirrel":{
+                    "x":582,
+                    "y":454
+                },
+                "gray_squirrel":{
+                    "x":411,
+                    "y":652
+                },
+                "beetle":{
+                    "x":335,
+                    "y":548
+                },
+                "spider":{
+                    "x":329,
+                    "y":599
+                },
+                "mushrooms":{
+                    "x":583,
+                    "y":663
+                },
+                "basket":{
+                    "x":711,
+                    "y":571
+                },
+                "salamander":{
+                    "x":528,
+                    "y":686
+                },
+                "wren":{
+                    "x":131,
+                    "y":336
+                },
+                "mistletoe":{
+                    "x":308,
+                    "y":186
+                },
+                "spiderweb":{
+                    "x":469,
+                    "y":460
+                },
+                "acorns":{
+                    "x":243,
+                    "y":485
+                },
+                "slippery_devil":{
+                    "x":248,
+                    "y":613
+                },
+                "berries":{
+                    "x":551,
+                    "y":516
+                },
+                "nuts":{
+                    "x":647,
+                    "y":507
+                },
+                "dried_leaves":{
+                    "x":401,
+                    "y":584
+                }
+            };
+
+        this.voronoiLayer = new VoronoiLayer(sitePoints, $("#veronoi_ui") );
 
     };
 
