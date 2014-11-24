@@ -13,41 +13,43 @@
 
   <body>
     <img src="oak-tree-bg.png" style="position:absolute; top:0px; left:0px;"/>
-    <textarea id="txtoutput" style="position:fixed;right:0px;height:90%;width:300px;margin:20px;"></textarea>
+    <textarea id="txtoutput" style="position:fixed;right:0px;height:80%;width:300px;margin:20px;"></textarea>
+    <a href="http://jsonformatter.curiousconcept.com/" style="position:fixed;right:0px;top:85%;width:300px;margin:20px;">JSON Formatter</a>
   </body>
 
   <script type="text/javascript">
 
-    var allpoints = [];
+    var allsites = [];
 
     function setup() {
 
-      allpoints = {sites: {}};
+      allsites = [];
 
       //listen for clicks
       $('img').click(function(e) {
 
-        var xx = e.pageX;
-        var yy = e.pageY;
-        var specimenId = prompt("ID for x:"+xx+", y:"+yy+"", "");
+        var x = e.pageX;
+        var y = e.pageY;
+        var specimenId = prompt("ID for x:"+x+", y:"+y+"", "");
 
-        addPoint(xx,yy,specimenId);
+        addPoint(specimenId,x,y);
 
       });
 
     }
 
-    function addPoint(_x,_y,_id){
+    function addPoint(_id,_x,_y){
 
-      allpoints.sites[_id] = {x: _x, y: _y};
+      allsites.push({id: _id, x: _x, y: _y});
 
-      updateOutput(allpoints);
+      updateOutput(allsites);
 
     }
 
     function updateOutput(val){
-      //Send to text area
+
       document.getElementById("txtoutput").value = JSON.stringify(val);
+
     }
 
     setup();

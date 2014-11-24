@@ -1671,6 +1671,7 @@ Voronoi.prototype.compute = function(sites, bbox) {
                 // first create cell for new site
                 cells[siteid] = this.createCell(site);
                 site.voronoiId = siteid++;
+                site. = siteid++;
                 // then create a beachsection for that site
                 this.addBeachsection(site);
                 // remember last site coords to detect duplicate

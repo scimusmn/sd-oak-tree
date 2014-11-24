@@ -255,36 +255,31 @@ p.es {
 #main_nav img,
 #main_nav svg {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 60px;
+  top: 5px;
+}
+#main_nav button {
+  margin: 5px;
 }
 
 
-/* Voronoi SVG */
+/* Voronoi SVG - Uncomment for debugging */
 #main_nav polygon{
-  fill: rgba(210,255,220, 0.3);
+  fill: rgba(210,255,220, 0.2);
   stroke:#444;
   stroke-width:1;
 }
-
 #main_nav svg circle {
   stroke:#f00;
   stroke-width:2;
   fill:#fff;
-  pointer-events:none;
 }
-
 #main_nav polygon:hover {
   fill: rgba(222,244,233, 0.7);
 }
 #main_nav polygon:active {
   fill: rgba(235,245,235, 0.8);
 }
-
-#main_nav button {
-  margin: 5px;
-}
-
 
 .content-right{
 

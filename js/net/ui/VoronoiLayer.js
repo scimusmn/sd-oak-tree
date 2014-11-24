@@ -1,98 +1,91 @@
 /* ========================================================================================
    VoronoiLayer utilizes the Voronoi diagram (http://en.wikipedia.org/wiki/Voronoi_diagram)
-   to create an SVG layer of polygonal hit areas, maximizing hit area space. Pass an array
-   of center-points. Uses library: https://github.com/gorhill/Javascript-Voronoi
+   to create an SVG layer of polygonal hit areas, maximizing hit area space.
+   Currently using Voronoi process from library: https://github.com/gorhill/Javascript-Voronoi
    ===================================================================================== */
 
 define([ 'libs/rhill-voronoi-core.min' ], function( Vor ){
 
-    function VoronoiLayer( pointList, svgElement ){
+    function VoronoiLayer( sites, svgElement, cellClickCallback ){
 
-        this.pointList = pointList; // Array of center-points
+        // Array of center-points with ids, like so:[ {"id":"Site_A","x":160,"y":564}, {"id":"Site_B","x":442,"y":336}, {...}, {...} ];
+        this.sites = sites;
+
+        // Empty <svg> element to populate
         this.svgElement = svgElement;
 
-        this.sites = [];
-        for (var key in this.pointList) {
-            var obj = this.pointList[key];
-            // console.log(key + " = " + obj.x+', '+ obj.y);
-            this.sites.push({"id":key, "x":obj.x, "y":obj.y});
-        }
+        // Called when a cell is clicked.
+        this.cellClickCallback = cellClickCallback || function(){};
 
-        //temp
-        //expected format
-        // this.sites = [{x:200, y:444}, {x:50, y:250}, {x:400, y:100}, {x:262, y:411}, {x:48, y:333}];
+        this.createVoronoiDiagram();
 
-        this.init();
+        this.createSVG();
+
+        var thisRef = this;
+        $(this.svgElement).find('polygon').on('click', function(evt){
+
+            var cellId = $(this).attr('id');
+            thisRef.cellClickCallback(cellId);
+
+        });
 
     }
 
-    VoronoiLayer.prototype.init = function() {
+    VoronoiLayer.prototype.createVoronoiDiagram = function() {
 
         this.voronoi = new Voronoi();
 
-        //Set bounds box
-        this.bbox = {xl:0, xr:$(this.svgElement).width(), yt:0, yb:$(this.svgElement).height()};
+        //Bounding box
+        var right = $(this.svgElement).width();
+        var bottom = $(this.svgElement).height();
+        this.bbox = {xl:0, xr:right, yt:0, yb:bottom};
 
-        //Create cells from Voronoi calculations
+        //Generate Voronoi diagram
         this.diagram = this.voronoi.compute(this.sites, this.bbox);
-
-        //Draw svg shapes
-        this.createSVG();
-
-        //Listen for clicks
-        $(this.svgElement).find('polygon').on('click', function(evt){
-
-            console.log( $(this).attr('id') );
-
-        });
 
     };
 
     VoronoiLayer.prototype.createSVG = function() {
 
-        if (!this.diagram) return;
-
-        //Draw Cells
+        //Init vars outside of iteration
         var cells = this.diagram.cells;
         var index = cells.length;
         var cell;
         var halfEdges;
-        var startPoint;
-        var endPoint;
+        var drawPoint;
         var pointsStr;
+        var newShape;
 
+        //Draw Cells
         while (index--) {
             cell = cells[index];
             halfEdges = cell.halfedges;
 
             //First point
-            startPoint = halfEdges[0].getStartpoint();
-            pointsStr = startPoint.x+','+startPoint.y+' ';
+            drawPoint = halfEdges[0].getStartpoint();
+            pointsStr = drawPoint.x+','+drawPoint.y+' ';
 
             for (var i = 0; i < halfEdges.length; i++) {
 
-                endPoint = halfEdges[i].getEndpoint();
-
-                pointsStr += ' '+endPoint.x+','+endPoint.y;
+                drawPoint = halfEdges[i].getEndpoint();
+                pointsStr += ' '+drawPoint.x+','+drawPoint.y;
 
             };
 
-            var polyId = 'hit_'+cell.site.id;
-            var newPoly = '<polygon id="'+polyId+'" points="' + pointsStr + '"/>';
-            $(this.svgElement).append($(newPoly));
+            //Add Polygon representing cell
+            newShape = '<polygon id="'+cell.site.id+'" points="' + pointsStr + '" pointer-events="visible" fill="none"/>';
+            $(this.svgElement).append($(newShape));
 
-            //draw site
-            var v = cell.site;
-            var newCirc = '<circle cx="'+(v.x-2)+'" cy="'+(v.y-2)+'" r="2" />';
-            $(this.svgElement).append($(newCirc));
+            //Add Circle representing site point
+            newShape = '<circle cx="'+(cell.site.x-2)+'" cy="'+(cell.site.y-2)+'" r="2" pointer-events="none" fill="none"/>';
+            $(this.svgElement).append($(newShape));
 
         }
 
-        //must refresh svg html
+        //Refresh svg html
         $(this.svgElement).html($(this.svgElement).html());
 
     };
-
 
     return VoronoiLayer;
 
