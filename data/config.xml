@@ -1,82 +1,380 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <config>
-
-  <!-- ======== -->
-  <!-- SETTINGS -->
-  <!-- ======== -->
-  <settings>
-    <setting id="developerMode" value="true" />
-    <setting id="timeout_delay" value="30" />
-    <setting id="example_setting" value="example_value" />
-  </settings>
-
-  <!-- ================= -->
-  <!-- SPECIMEN MANIFEST -->
-  <!-- ================= -->
-  <component id="oak_tree_specimens">
-
-    <specimens>
-
-      <!-- Mule Deer -->
-      <specimen id="mule_deer" img="img/mule_deer.jpg">
-
-        <text id="common">
-          <en>Mule Deer</en>
-          <es>Venado bura</es>
-        </text>
-
-        <text id="scientific">
-          Odocoileus hemionus
-        </text>
-
-        <text id="description">
-          <en>Mule Deer need extra fat reserves to help them get through winter in the mountains. Acorns are an important fall food source, with high nutritional value, that helps them build up that much-needed fat. </en>
-          <es>Los venados bura necesitan reservas adicionales de grasa para ayudarles a soportar el invierno en las montañas.  Las bellotas son una importante fuente de alimento en el otoño, con alto valor nutritivo, que les ayuda a acumular esa grasa tan necesaria.</es>
-        </text>
-
-      </specimen>
-
-      <!-- Acorn Weevil -->
-      <specimen id="acorn_weevil" img="img/acorn_weevil.jpg">
-
-        <text id="common">
-          <en>Acorn Weevil</en>
-          <es>Curculio occidentis</es>
-        </text>
-
-        <text id="scientific">
-          Curculio occidentis
-        </text>
-
-        <text id="description">
-          <en>An Acorn Weevil larva hibernates in the soil through winter. In the spring it will emerge ready to feed on, and deposit an egg inside, an acorn. After the egg hatches, the new larva will eat its way out of the acorn and fall to the ground to hibernate—starting the cycle all over again.</en>
-          <es>La larva de una gorgojo de la bellota hiberna en la tierra a lo largo del invierno.  En la primavera emerge listo  para alimentarse de una bellota y depositar un huevo dentro de la misma.
-          </es>
-        </text>
-
-      </specimen>
-
-      <!-- Gray Squirrel -->
-      <specimen id="gray_squirrel" img="img/gray_squirrel.jpg">
-
-        <text id="common">
-          <en>Western Gray Squirrel</en>
-          <es>Ardilla gris occidental</es>
-        </text>
-
-        <text id="scientific">
-          Sciurus griseus
-        </text>
-
-        <text id="description">
-          <en>This Western Gray Squirrel is reaping the rewards of a busy gathering season. It spent the fall storing acorns in small holes in the ground called caches (pronounced CASH-ez). Now that it’s winter and food is scarce, the squirrel unearths its secret stash.</en>
-          <es>Esta ardilla gris occidental está disfrutando la recompensa de una ajetreada temporada de recolección. Pasó el otoño almacenando bellotas en pequeños huecos en el suelo.  Ahora que es invierno y la comida es escasa, la ardilla desentierra su reserva secreta.</es>
-        </text>
-
-      </specimen>
-
-    </specimens>
-
-  </component>
-
+    <!-- ======== -->
+    <!-- SETTINGS -->
+    <!-- ======== -->
+    <settings>
+        <setting id="example_setting" value="example_value" />
+    </settings>
+    <!-- ======== -->
+    <!-- LANGUAGE -->
+    <!-- ======== -->
+    <component>
+        <specimens>
+            <!-- ================ -->
+            <!-- Acorn Woodpecker -->
+            <!-- ================ -->
+            <specimen id="acorn_woodpecker" img="img/acorn_woodpecker.png">
+                <text id="common">
+                    <en>Acorn Woodpecker</en>
+                    <es>Carpintero bellotero</es>
+                </text>
+                <text id="scientific">Melanerpes formicivorus</text>
+                <text id="description">
+                    <en>Acorn Woodpeckers drill small holes into trees to store acorns. More than half of this bird’s diet consists of acorns, so it spends lots of time jamming hundreds of acorns into trees to eat later.</en>
+                    <es>Los carpinteros belloteros taladran pequeños agujeros en los árboles para guardar bellotas. Más de la mitad de la dieta de este pájaro consiste de bellotas, y es por eso que pasa mucho tiempo insertando cientos de bellotas en los árboles para comer después.</es>
+                </text>
+            </specimen>
+            <!-- ==================== -->
+            <!-- Nuttall’s Woodpecker -->
+            <!-- ==================== -->
+            <specimen id="nuttals_woodpecker" img="img/nuttals_woodpecker.png">
+                <text id="common">
+                    <en>Nuttall’s Woodpecker</en>
+                    <es>Carpintero californiano</es>
+                </text>
+                <text id="scientific">Picoides nuttallii</text>
+                <text id="description">
+                    <en>This woodpecker lives mainly in oak woodlands, but it doesn’t eat acorns. The Nuttall’s Woodpecker prefers to feed on a delectable meal of insect larvae.</en>
+                    <es>Este carpintero vive principalmente en bosques de robles, pero no come bellotas. El carpintero californiano prefiere alimentarse de una deleitable comida que consiste de larvas de insectos.</es>
+                </text>
+            </specimen>
+            <!-- ================= -->
+            <!-- Western Scrub Jay -->
+            <!-- ================= -->
+            <specimen id="western_scrub_jay" img="img/western_scrub_jay.png">
+                <text id="common">
+                    <en>Western Scrub Jay</en>
+                    <es>Chara pechirrayada</es>
+                </text>
+                <text id="scientific">Aphelocoma californica</text>
+                <text id="description">
+                    <en>Unlike the Acorn Woodpecker, which stores acorns in trees, the Western Scrub Jay puts them in the ground. This benefits the oak tree because some of the acorns the Scrub Jay doesn’t eat will sprout and grow into trees.</en>
+                    <es>A diferencia del carpintero bellotero que almacena bellotas en los árboles, el chara pechirrayada las deposita en el suelo. Esto beneficia al roble porque algunas de las bellotas que el chara pechirrayada no come brotarán y llegarán a ser árboles.</es>
+                </text>
+            </specimen>
+            <!-- ============ -->
+            <!-- Oak Titmouse -->
+            <!-- ============ -->
+            <specimen id="oak_titmouse" img="img/oak_titmouse.png">
+                <text id="common">
+                    <en>Oak Titmouse</en>
+                    <es>Carbonero sencillo</es>
+                </text>
+                <text id="scientific">Baeolophus inornatus</text>
+                <text id="description">
+                    <en>Oak Titmice work in pairs to build their nests. The female is in charge of finding a suitable hole in an oak tree and building the nest, while the male follows her around and feeds her while she works.</en>
+                    <es>Los carboneros sencillos trabajan de a dos para construir sus nidos. La hembra está encargada de encontrar un hueco adecuado en un roble y de la construcción del nido, mientras el macho la sigue y le da de comer mientras ella trabaja.</es>
+                </text>
+            </specimen>
+            <!-- ================ -->
+            <!-- Western Bluebird -->
+            <!-- ================ -->
+            <specimen id="western_bluebird" img="img/western_bluebird.png">
+                <text id="common">
+                    <en>Western Bluebird</en>
+                    <es>Azulejo garganta azul</es>
+                </text>
+                <text id="scientific">Sialia mexicana</text>
+                <text id="description">
+                    <en>It’s winter in the mountains, and the Western Bluebird is having trouble finding insects to eat. No need to worry—it can always count on Oak Mistletoe berries for nutrition.</en>
+                    <es>Es invierno en las montañas, y al azulejo garganta azul le está costando encontrar insectos para comer. No hay que preocuparse—siempre puede contar con bayas de muérdago de roble para nutrirse.</es>
+                </text>
+            </specimen>
+            <!-- =================== -->
+            <!-- Western Screech Owl -->
+            <!-- =================== -->
+            <specimen id="western_screech_owl" img="img/western_screech_owl.png">
+                <text id="common">
+                    <en>Western Screech Owl</en>
+                    <es>Tecolote occidental</es>
+                </text>
+                <text id="scientific">Megascops kennicottii</text>
+                <text id="description">
+                    <en>Like most owls, this small owl comes out only at night. During the day you might spot a Western Screech Owl roosting in a natural cavity of its favorite tree, the oak.</en>
+                    <es>Como la mayoría de los miembros de su especie, este pequeño tecolote sólo sale de noche. Durante el día es posible que veas un tecolote occidental resguardado en una cavidad natural de su árbol favorito, el roble.</es>
+                </text>
+            </specimen>
+            <!-- ==================== -->
+            <!-- Ruby-crowned Kinglet -->
+            <!-- ==================== -->
+            <specimen id="ruby_crowned_kinglet" img="img/ruby_crowned_kinglet.png">
+                <text id="common">
+                    <en>Ruby-crowned Kinglet</en>
+                    <es>Reyezuelo de rojo</es>
+                </text>
+                <text id="scientific">Regulus calendula</text>
+                <text id="description">
+                    <en>This Ruby-crowned Kinglet is a winter visitor to our mountain forests. While here, it spends its time darting from oak tree to oak tree in search of insects crawling in the leaves and twigs.</en>
+                    <es>Este reyezuelo de rojo llega de visita en invierno a nuestros bosques de las montañas. Cuando está aquí, pasa el tiempo yendo velozmente de roble en roble en busca de insectos que andan por las hojas y las ramas.</es>
+                </text>
+            </specimen>
+            <!-- ================== -->
+            <!-- Band-tailed Pigeon -->
+            <!-- ================== -->
+            <specimen id="band_tailed_pigeon" img="img/band_tailed_pigeon.png">
+                <text id="common">
+                    <en>Band-tailed Pigeon</en>
+                    <es>Paloma de collar</es>
+                </text>
+                <text id="scientific">Patagioenas fasciata</text>
+                <text id="description">
+                    <en>That’s no bat you’re looking at. The resourceful Band-tailed Pigeon sometimes hangs upside down from branches to collect hard-to-reach acorns before gulping them down whole.</en>
+                    <es>Lo que estás viendo no es ningún murciélago. La habilidosa paloma de collar a veces se cuelga de cabeza desde las ramas para recolectar bellotas difíciles de alcanzar antes de tragárselas enteras.</es>
+                </text>
+            </specimen>
+            <!-- ========= -->
+            <!-- Mule Deer -->
+            <!-- ========= -->
+            <specimen id="mule_deer" img="img/mule_deer.png">
+                <text id="common">
+                    <en>Mule Deer</en>
+                    <es>Venado bura</es>
+                </text>
+                <text id="scientific">Odocoileus hemionus</text>
+                <text id="description">
+                    <en>Mule Deer need extra fat reserves to help them get through winter in the mountains. Acorns are an important fall food source, with high nutritional value, that helps them build up that much-needed fat.</en>
+                    <es>Los venados bura necesitan reservas adicionales de grasa para ayudarles a soportar el invierno en las montañas. Las bellotas son una importante fuente de alimento en el otoño, con alto valor nutritivo, que les ayuda a acumular esa grasa tan necesaria.</es>
+                </text>
+            </specimen>
+            <!-- ===================== -->
+            <!-- Western Gray Squirrel -->
+            <!-- ===================== -->
+            <specimen id="western_gray_squirrel" img="img/western_gray_squirrel.png">
+                <text id="common">
+                    <en>Western Gray Squirrel</en>
+                    <es>Ardilla gris occidental</es>
+                </text>
+                <text id="scientific">Sciurus griseus</text>
+                <text id="description">
+                    <en>This Western Gray Squirrel is reaping the rewards of a busy gathering season. It spent the fall storing acorns in small holes in the ground called caches (pronounced CASH-ez). Now that it’s winter and food is scarce, the squirrel unearths its secret stash.</en>
+                    <es>Esta ardilla gris occidental está disfrutando la recompensa de una ajetreada temporada de recolección. Pasó el otoño almacenando bellotas en pequeños huecos en el suelo. Ahora que es invierno y la comida es escasa, la ardilla desentierra su reserva secreta.</es>
+                </text>
+            </specimen>
+            <!-- ============ -->
+            <!-- Acorn Weevil -->
+            <!-- ============ -->
+            <specimen id="weev weev acorn_weevil" img="img/weev weev acorn_weevil.png">
+                <text id="common">
+                    <en>Acorn Weevil</en>
+                    <es>Gorgojo de la bellota</es>
+                </text>
+                <text id="scientific">Curculio occidentis</text>
+                <text id="description">
+                    <en>An Acorn Weevil larva hibernates in the soil through winter. In the spring it will emerge ready to feed on, and deposit an egg inside, an acorn. After the egg hatches, the new larva will eat its way out of the acorn and fall to the ground to hibernate—starting the cycle all over again.</en>
+                    <es>La larva de una gorgojo de la bellot</es>
+                </text>
+            </specimen>
+            <!-- ==================== -->
+            <!-- California Gall Wasp -->
+            <!-- ==================== -->
+            <specimen id="california_gall_wasp" img="img/california_gall_wasp.png">
+                <text id="common">
+                    <en>California Gall Wasp</en>
+                    <es>Avispa de la agalla del roble commún</es>
+                </text>
+                <text id="scientific">Andricus quercuscalifornicus</text>
+                <text id="description">
+                    <en>The female California Gall Wasp deposits her eggs on oak trees. Once the egg hatches, plant tissue will form a structure, called a gall, around the larva. The gall will protect the larva and serve as its food.</en>
+                    <es>La avispa de la agalla del roble commú</es>
+                </text>
+            </specimen>
+            <!-- ========================= -->
+            <!-- California Prionus Beetle -->
+            <!-- ========================= -->
+            <specimen id="california_prionus_beetle" img="img/california_prionus_beetle.png">
+                <text id="common">
+                    <en>California Prionus Beetle</en>
+                    <es>Barrenador de la raíz</es>
+                </text>
+                <text id="scientific">Prionus californicus</text>
+                <text id="description">
+                    <en>Take a good look because it’s rare to see a California Prionus Beetle in the wild. This huge beetle spends most of its life below ground level, devouring oak-tree roots.</en>
+                    <es>Echa un buen vistazo porque no es frecuente ver a un barrenador de la raí</es>
+                </text>
+            </specimen>
+            <!-- ======================== -->
+            <!-- Pacific Tent Caterpillar -->
+            <!-- ======================== -->
+            <specimen id="pacific_tent_caterpillar" img="img/pacific_tent_caterpillar.png">
+                <text id="common">
+                    <en>Pacific Tent Caterpillar</en>
+                    <es>Oruga defoliadora de pacifico</es>
+                </text>
+                <text id="scientific">Malacosoma constricta</text>
+                <text id="description">
+                    <en>This little white glob doesn’t look like much. But inside, hundreds of Pacific Tent Caterpillar eggs wait for spring, when new larvae will hatch and start munching on oak leaves.</en>
+                    <es>Este pequeño glóbulo blanco no parece gran cosa. Pero por dentro, cientos de huevos de la oruga defoliadora de pacifico esperan la primavera cuando nuevas larvas nacerán y comenzarán a masticar las hojas de los robles.</es>
+                </text>
+            </specimen>
+            <!-- ============== -->
+            <!-- Oak Treehopper -->
+            <!-- ============== -->
+            <specimen id="oak_treehopper" img="img/oak_treehopper.png">
+                <text id="common">
+                    <en>Oak Treehopper</en>
+                    <es>Membrácido del roble</es>
+                </text>
+                <text id="scientific">Platycotis vittata</text>
+                <text id="description">
+                    <en>Oak Treehoppers love oak trees. They live on them, lay eggs on them, and feed on them. Scientists are still researching why these insects are attracted to oaks. One idea is that oaks provide special nutrients that help them survive.</en>
+                    <es>A los membrácidos del roble les encantan los robles. Viven de ellos, ponen huevos sobre ellos, y se alimentan de ellos. Los científicos todavía están investigando porqué a estos insectos les atraen los robles. Una idea es que los robles suministran nutrientes especiales que les ayudan a sobrevivir.</es>
+                </text>
+            </specimen>
+            <!-- ============= -->
+            <!-- Oak Mistletoe -->
+            <!-- ============= -->
+            <specimen id="oak_mistletoe" img="img/oak_mistletoe.png">
+                <text id="common">
+                    <en>Oak Mistletoe</en>
+                    <es>Toji</es>
+                </text>
+                <text id="scientific">Phoradendron leucarpum ssp. tomentosum</text>
+                <text id="description">
+                    <en>Have you ever seen a clump of green leaves on an otherwise leafless oak tree? Chances are what you saw was Oak Mistletoe. This flowering plant drains the oak of its nutrients and water by digging its roots into the branches of the tree.</en>
+                    <es>¿Alguna vez has visto un macizo de hojas verdes en un roble por lo demás sin hojas? Lo más probable es que hayas visto toji. Esta planta floreciente drena al roble de sus nutrientes y agua, excavando con sus raíces dentro de las ramas del árbol.</es>
+                </text>
+            </specimen>
+            <!-- =============== -->
+            <!-- Oak Chanterelle -->
+            <!-- =============== -->
+            <specimen id="oak_chanterelle" img="img/oak_chanterelle.png">
+                <text id="common">
+                    <en>Oak Chanterelle</en>
+                    <es>Hongo rebozuelo</es>
+                </text>
+                <text id="scientific">Cantharellus californicus</text>
+                <text id="description">
+                    <en>Oak trees and this mushroom need each other. The Oak Chanterelle has many root hairs. This helps the oak collect more water and nutrients than it could on its own. In return, the tree will share its food with this fungus.</en>
+                    <es>Los robles y este hongo se necesitan mutuamente. El hongo rebozuel</es>
+                </text>
+            </specimen>
+            <!-- ======================== -->
+            <!-- Large-blotched Ensantina -->
+            <!-- ======================== -->
+            <specimen id="ens ens large_blotched_ensatina" img="img/ens ens large_blotched_ensatina.png">
+                <text id="common">
+                    <en>Large-blotched Ensantina</en>
+                    <es>Ensatina manchas-grandes</es>
+                </text>
+                <text id="scientific">Ensatina klauberi</text>
+                <text id="description">
+                    <en>The Large-blotched Ensatina doesn’t have lungs, so it breathes through its skin. Living under oak-leaf litter provides this salamander with the moist environment it needs in order to breathe.</en>
+                    <es>La ensatina manchas-grandes no tiene pulmones, sino que respira a través de su piel. Vivir debajo de la hojarasca de los robles provee a esta salamandra del ambiente húmedo que necesita para poder respirar.</es>
+                </text>
+            </specimen>
+            <!-- ========================= -->
+            <!-- Southern Alligator Lizard -->
+            <!-- ========================= -->
+            <specimen id="southern_alligator_lizard" img="img/southern_alligator_lizard.png">
+                <text id="common">
+                    <en>Southern Alligator Lizard</en>
+                    <es>Lagarto escorpión sureño</es>
+                </text>
+                <text id="scientific">Elgaria multicarinata</text>
+                <text id="description">
+                    <en>The Southern Alligator Lizard prefers the safe cover of oak-leaf litter. If it is ever threatened, it can detach its tail to distract a predator as it wriggles further into the leaves. Don’t worry, though—it can always grow a new one.</en>
+                    <es>Este lagarto escorpión sureño prefiere la cubierta segura de la hojarasca de los robles. Si alguna vez se siente amenazado, puede separar su cola para distraer a un depredador, dándole tiempo de escabullirse entre las hojas. Pero no te preocupes, siempre le puede crecer una nueva cola.</es>
+                </text>
+            </specimen>
+            <!-- ============= -->
+            <!-- Western Skink -->
+            <!-- ============= -->
+            <specimen id="western_skink" img="img/western_skink.png">
+                <text id="common">
+                    <en>Western Skink</en>
+                    <es>Eslizón occidental</es>
+                </text>
+                <text id="scientific">Plestiodon skiltonianus</text>
+                <text id="description">
+                    <en>A little lizard with a big appetite, the sneaky Western Skink stalks its prey under the cover of oak-leaf litter. It’s always looking for its next meal, which might include spiders, sow bugs, crickets, beetles, or grasshoppers.</en>
+                    <es>Una pequeña lagartija con un gran apetito, el pícaro eslizón occidental acecha su presa bajo la cubierta de la hojarasca de los robles. Siempre está buscando su próxima comida, que puede incluir arañas, cochinillas de la humedad, grillos, escarabajos, o chapulines.</es>
+                </text>
+            </specimen>
+            <!-- ============ -->
+            <!-- Ornate Shrew -->
+            <!-- ============ -->
+            <specimen id="ornate_shrew" img="img/ornate_shrew.png">
+                <text id="common">
+                    <en>Ornate Shrew</en>
+                    <es>Musaraña ornamentada</es>
+                </text>
+                <text id="scientific">Sorex ornatus</text>
+                <text id="description">
+                    <en>In the wild you might hear this Ornate Shrew before you see it. It has a fast metabolism, so it’s always on the move, scurrying through the leaf litter in search of food.</en>
+                    <es>En el mundo natural, es posible que oigas a esta musaraña ornamentada antes de verla. Tiene un metabolismo muy veloz, por lo que siempre está en movimiento, escabulléndose por la hojarasca en busca de comida.</es>
+                </text>
+            </specimen>
+            <!-- ====== -->
+            <!-- Blewit -->
+            <!-- ====== -->
+            <specimen id="blewit" img="img/blewit.png">
+                <text id="common">
+                    <en>Blewit</en>
+                    <es>Hongo de pie azul</es>
+                </text>
+                <text id="scientific">Clitocybe nuda</text>
+                <text id="description">
+                    <en>Many know the Blewit as a “trash dweller.” This litter-loving mushroom grows best when surrounded by the decaying leaf litter of the oak tree.</en>
+                    <es>Muchos se refieren al hongo de pie azu</es>
+                </text>
+            </specimen>
+            <!-- ========================= -->
+            <!-- Common Greenshield Lichen -->
+            <!-- ========================= -->
+            <specimen id="common_greensheild_lichen" img="img/common_greensheild_lichen.png">
+                <text id="common">
+                    <en>Common Greenshield Lichen</en>
+                    <es>Liquen</es>
+                </text>
+                <text id="scientific">Flavoparmelia caperata</text>
+                <text id="description">
+                    <en>Lichens and oak trees depend on one another. An oak is a good place for lichens to grow, and the lichens help shield the tree against pests. If you see an oak tree, it’s likely you’ll find lichens growing on it.</en>
+                    <es>Los líquenes y los robles dependen el uno del otro. Un roble es un buen lugar para que crezcan líquenes, y los líquenes ayudan a proteger al árbol contra las plagas . Si ves un roble, es probable que encuentres líquenes creciendo sobre él.</es>
+                </text>
+            </specimen>
+            <!-- ====== -->
+            <!-- Spider -->
+            <!-- ====== -->
+            <specimen id="spider" img="img/spider.png">
+                <text id="common">
+                    <en>Spider</en>
+                    <es>Araña</es>
+                </text>
+                <text id="scientific">Apostenus californicus</text>
+                <text id="description">
+                    <en>We don’t know much about this spider, but we do know it lives only in oak-leaf litter in southern California’s mountain ranges.</en>
+                    <es>No sabemos mucho acerca de esta araña, pero lo que sí sabemos es que sólo vive en la hojarasca de los robles en las cadenas montañosas del sur de California.</es>
+                </text>
+            </specimen>
+            <!-- ============== -->
+            <!-- Granary Basket -->
+            <!-- ============== -->
+            <specimen id="acorn_granary_basket" img="img/acorn_granary_basket.png">
+                <text id="common">
+                    <en>Granary Basket</en>
+                    <es>Canastas graneras</es>
+                </text>
+                <text id="scientific">SCIENTIFIC NAME REQUIRED</text>
+                <text id="description">
+                    <en>In southern California, Native Americans harvested acorns in the fall to sustain them through winter and beyond. Keeping acorns in larger granaries, such as the one you see here, protected them from scavengers. Acorns are rich in fat, which the body needs but is difficult to come by in the wild. However, there’s a catch: they contain tannic acid, which is bitter and potentially poisonous. So making acorns edible is a lot of work—but worth the effort.</en>
+                    <es>En el sur de California, los americanos nativos cosechaban bellotas en el otoño para el sustento necesario a lo largo y después del invierno. Guardar bellotas en graneros más grandes, tales como el que ves aquí, las protegía de los carroñeros</es>
+                </text>
+            </specimen>
+            <!-- ============== -->
+            <!-- Grinding stone -->
+            <!-- ============== -->
+            <specimen id="matate" img="img/matate.png">
+                <text id="common">
+                    <en>Grinding stone</en>
+                    <es>Piedra de moler</es>
+                </text>
+                <text id="scientific">SCIENTIFIC NAME REQUIRED</text>
+                <text id="description">
+                    <en>Acorns were the primary food staple for the native peoples of what is now southern California. Using grinding stones, they would grind the acorns into a paste that could be roasted and eaten as mush or made into acorn bread.</en>
+                    <es>Las bellotas constituían el alimento básico de los pueblos nativos de lo que es hoy el sur de California. Usando una piedra de moler, molían las bellotas para formar una pasta que podía tostarse y comerse como papilla o usarse para preparar pan de bellotas.</es>
+                </text>
+            </specimen>
+        </specimens>
+    </component>
 </config>

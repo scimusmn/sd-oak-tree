@@ -113,7 +113,7 @@ define([], function(){
                                     "y":597
                                 },
                                 {
-                                    "id":"western_grey_squirrel",
+                                    "id":"western_gray_squirrel",
                                     "x":413,
                                     "y":653
                                 },

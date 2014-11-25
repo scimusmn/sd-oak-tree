@@ -15,12 +15,11 @@
 
     Path: <input id="pathTxt" style="width:450px" type="text" name="pathTxt" value="Oak Tree Export - Sheet1.csv">
     <br/><br/>
-     <button type="button" onclick="makeXML()">Make XML</button>
-     <button type="button" onclick="clearXML()">Clear</button>
+     <button type="button" onclick="makeXML()">Generate</button>
      <br/><br/>
     <textarea id="txtoutput" style='width:70%; height:500px'></textarea>
     <br/><br/>
-    Format: <a href="http://www.freeformatter.com/xml-formatter.html" target="_blank">XML Makeover</a>
+    <a href="http://www.freeformatter.com/xml-formatter.html" target="_blank">XML Formatter</a>
 
   </body>
 
@@ -35,94 +34,75 @@
 
     var makeXML = function(){
 
-    var specimens = '<xxx><config><!-- ======== --><!-- SETTINGS --><!-- ======== --><settings><setting id="example_setting" value="example_value" /></settings><!-- ======== --><!-- LANGUAGE --><!-- ======== --><component id="oak_tree_specimens"><specimens></specimens></component></config></xxx>';
+    var manifestType = 'specimens';
+    var objectType = 'specimen';
 
-    var config = $.parseHTML( specimens );
+    var config = $.parseHTML( '<xxx><config><!-- ======== --><!-- SETTINGS --><!-- ======== --><settings><setting id="example_setting" value="example_value" /></settings><!-- ======== --><!-- LANGUAGE --><!-- ======== --><component><'+manifestType+'></'+manifestType+'></component></config></xxx>');
 
     //load html to parse
     var indexPath = document.getElementById("pathTxt").value;
 
     $.get(indexPath+'').success( function(data) {
 
-        console.log(data.split('\n')); //split by new line
-
-        // console.log(data.split('Component #')); //split by new line
         var components = data.split('Component # 813\n Mountains\n \n XID: ');
 
-        console.log(components.length);
+        components.shift();
+
         components.forEach(function( c ) {
 
-            console.log( c.substring(0, 100) );
 
-            var commonEnglish = '';
-            var scientific = '';
-            var descriptionEnglish = '';
-            var commonSpanish = '';
-            var descriptionSpanish = '';
+            var lines = c.split('\n');
 
-        });
+            var commonEnglish = (lines[0].split('","')[0]).trim();
+            var scientific = (lines[1]).trim();
+            var descripEnglish = (lines[3].split('","')[0]).trim();
+            var commonSpanish = (lines[3].split('","')[1]).trim();
+            var descripSpanish = lines[6].substring(0, lines[6].length - 1).trim();
 
+            var spacers = Array(commonEnglish.length+1).join("=");
+            var s = $.parseHTML( '<!-- '+spacers+' --><!-- '+commonEnglish+' --><!-- '+spacers+' --><'+objectType+'></'+objectType+'>' );
 
-        /*
+            //set manifest object attributes
+            var objectId = prompt("ID for: "+commonEnglish, "");
+            // var objectId = commonEnglish;
+            $(s).attr('id', objectId);
+            $(s).attr('img', "img/"+objectId+".png");
 
-        $(data).find('.item').each(function(index) {
+            var cNode = textNode('common', commonEnglish, commonSpanish);
+            var sNode = textNode('scientific', scientific);
+            var dNode = textNode('description', descripEnglish, descripSpanish);
 
+            $(s).append(cNode);
+            $(s).append(sNode);
+            $(s).append(dNode);
 
-
-
-
-          var s = $.parseHTML( '<!-- SLIDE '+index+' --><slide></slide>' );
-
-          var id = 'slide_'+index;
-          var cls = ""; //get exception classes
-          if ($(this).find('.carousel-caption-title').length > 0) cls = 'title';
-          if ($(this).find('.carousel-caption-bottom').length > 0) cls = 'bottom';
-          var isrc = $(this).find('img').first().attr('src');
-
-          //set slide attributes
-          $(s).attr('id', id);
-          $(s).attr('class', cls);
-          $(s).attr('imgSrc', isrc);
-
-          //Add head text
-          var head = $.parseHTML( '<text id="head"><en></en><es></es></text>' );
-
-          //English title
-          var getEng = $(this).find('h2').html();
-          if( getEng==''|| getEng==undefined ) getEng = $(this).find('h1').html();
-
-          //Spanish title
-          var getEsp = $(spanishData).find('.item').eq(index).find('h2').html();
-          if(getEsp==''||getEsp==undefined) getEsp = $(spanishData).find('.item').eq(index).find('h1').html();
-
-          //Set XML
-          $(head).find('en').html( getEng );
-          $(head).find('es').html( getEsp );
-
-          //Add description text
-          var descr = $.parseHTML( '<text id="description"><en></en><es></es></text>' );
-          var getEngd = $(this).find('p').html();
-          var getEspd = $(spanishData).find('.item').eq(index).find('p').html();
-
-          $(descr).find('en').html( getEngd );
-          $(descr).find('es').html( getEspd );
-
-          $(s).append(head);
-          $(s).append(descr);
-
-          //add slide config
-          $(config).find('specimens').append(s);
-
+            //add slide config
+            $(config).find(manifestType).append(s);
 
 
         });
-
-        */
 
         //Send to text area
         document.getElementById("txtoutput").value = $(config).html();
 
     });
+
+  }
+
+  function textNode(id, english, spanish){
+
+
+    if(typeof(spanish)==='undefined') {
+
+      //No translations
+      return $.parseHTML( '<text id="'+id+'">'+english+'</text>' );
+
+    } else {
+
+      //Bilingual
+      return $.parseHTML( '<text id="'+id+'"><en>'+english+'</en><es>'+spanish+'</es></text>' );
+
+    }
 
   }
 
