@@ -154,7 +154,7 @@
             <!-- ============ -->
             <!-- Acorn Weevil -->
             <!-- ============ -->
-            <specimen id="weev weev acorn_weevil" img="img/weev weev acorn_weevil.png">
+            <specimen id="acorn_weevil" img="img/acorn_weevil.png">
                 <text id="common">
                     <en>Acorn Weevil</en>
                     <es>Gorgojo de la bellota</es>
@@ -162,7 +162,7 @@
                 <text id="scientific">Curculio occidentis</text>
                 <text id="description">
                     <en>An Acorn Weevil larva hibernates in the soil through winter. In the spring it will emerge ready to feed on, and deposit an egg inside, an acorn. After the egg hatches, the new larva will eat its way out of the acorn and fall to the ground to hibernate—starting the cycle all over again.</en>
-                    <es>La larva de una gorgojo de la bellot</es>
+                    <es>La larva de una gorgojo de la bellota hiberna en la tierra a lo largo del invierno.  En la primavera emerge listo  para alimentarse de una bellota y depositar un huevo dentro de la misma. Cuando el huevo eclosiona, la nueva larva se alimenta de la bellota y así finalmente la agujerea cayendo al suelo, lo cual da comienzo al ciclo una vez más.</es>
                 </text>
             </specimen>
             <!-- ==================== -->
@@ -176,7 +176,7 @@
                 <text id="scientific">Andricus quercuscalifornicus</text>
                 <text id="description">
                     <en>The female California Gall Wasp deposits her eggs on oak trees. Once the egg hatches, plant tissue will form a structure, called a gall, around the larva. The gall will protect the larva and serve as its food.</en>
-                    <es>La avispa de la agalla del roble commú</es>
+                    <es>La avispa de la agalla del roble commún hembra deposita sus huevos en los robles. Una vez que el huevo eclosiona, el tejido de la planta forma una estructura llamada vesícula alrededor de la larva. La vesícula protege la larva y sirve de alimento.</es>
                 </text>
             </specimen>
             <!-- ========================= -->
@@ -190,7 +190,7 @@
                 <text id="scientific">Prionus californicus</text>
                 <text id="description">
                     <en>Take a good look because it’s rare to see a California Prionus Beetle in the wild. This huge beetle spends most of its life below ground level, devouring oak-tree roots.</en>
-                    <es>Echa un buen vistazo porque no es frecuente ver a un barrenador de la raí</es>
+                    <es>Echa un buen vistazo porque no es frecuente ver a un barrenador de la raíz en su ambiente natural. Este enorme escarabajo pasa la mayor parte de su vida debajo del suelo devorando las raíces de los robles.</es>
                 </text>
             </specimen>
             <!-- ======================== -->
@@ -246,13 +246,13 @@
                 <text id="scientific">Cantharellus californicus</text>
                 <text id="description">
                     <en>Oak trees and this mushroom need each other. The Oak Chanterelle has many root hairs. This helps the oak collect more water and nutrients than it could on its own. In return, the tree will share its food with this fungus.</en>
-                    <es>Los robles y este hongo se necesitan mutuamente. El hongo rebozuel</es>
+                    <es>Los robles y este hongo se necesitan mutuamente.  El hongo rebozuelo tiene raíces con muchas hebras. Esto ayuda al roble a recolectar más agua y nutrientes de lo que podría por sí solo. A su vez, el árbol comparte su comida con este hongo.</es>
                 </text>
             </specimen>
             <!-- ======================== -->
             <!-- Large-blotched Ensantina -->
             <!-- ======================== -->
-            <specimen id="ens ens large_blotched_ensatina" img="img/ens ens large_blotched_ensatina.png">
+            <specimen id="large_blotched_ensatina" img="img/large_blotched_ensatina.png">
                 <text id="common">
                     <en>Large-blotched Ensantina</en>
                     <es>Ensatina manchas-grandes</es>
@@ -316,7 +316,7 @@
                 <text id="scientific">Clitocybe nuda</text>
                 <text id="description">
                     <en>Many know the Blewit as a “trash dweller.” This litter-loving mushroom grows best when surrounded by the decaying leaf litter of the oak tree.</en>
-                    <es>Muchos se refieren al hongo de pie azu</es>
+                    <es>Muchos se refieren al hongo de pie azul como “morador de la basura”. Este hongo amante de los desperdicios crece mejor cuando está rodeado de la hojarasca en descomposición del roble.</es>
                 </text>
             </specimen>
             <!-- ========================= -->
@@ -355,7 +355,7 @@
                     <en>Granary Basket</en>
                     <es>Canastas graneras</es>
                 </text>
-                <text id="scientific">SCIENTIFIC NAME REQUIRED</text>
+                <text id="scientific"> </text>
                 <text id="description">
                     <en>In southern California, Native Americans harvested acorns in the fall to sustain them through winter and beyond. Keeping acorns in larger granaries, such as the one you see here, protected them from scavengers. Acorns are rich in fat, which the body needs but is difficult to come by in the wild. However, there’s a catch: they contain tannic acid, which is bitter and potentially poisonous. So making acorns edible is a lot of work—but worth the effort.</en>
                     <es>En el sur de California, los americanos nativos cosechaban bellotas en el otoño para el sustento necesario a lo largo y después del invierno. Guardar bellotas en graneros más grandes, tales como el que ves aquí, las protegía de los carroñeros</es>
@@ -369,7 +369,7 @@
                     <en>Grinding stone</en>
                     <es>Piedra de moler</es>
                 </text>
-                <text id="scientific">SCIENTIFIC NAME REQUIRED</text>
+                <text id="scientific"> </text>
                 <text id="description">
                     <en>Acorns were the primary food staple for the native peoples of what is now southern California. Using grinding stones, they would grind the acorns into a paste that could be roasted and eaten as mush or made into acorn bread.</en>
                     <es>Las bellotas constituían el alimento básico de los pueblos nativos de lo que es hoy el sur de California. Usando una piedra de moler, molían las bellotas para formar una pasta que podía tostarse y comerse como papilla o usarse para preparar pan de bellotas.</es>

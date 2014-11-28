@@ -15,9 +15,6 @@ require.config({
 
 require(['jquery', 'net/AppData', 'net/Screensaver', 'net/ui/ScreenManager', 'net/ui/MainScreen'], function( $, AppData, Screensaver, ScreenManager, MainScreen ) {
 
-    /*--------------*/
-    /* Initial Load */
-    /*--------------*/
 
     //Load XML
     $.ajax({
@@ -29,18 +26,13 @@ require(['jquery', 'net/AppData', 'net/Screensaver', 'net/ui/ScreenManager', 'ne
             AppData.updateSettings(xml);
             initialize();
 
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            // Show error message if desired
-
         }
     });
 
     function initialize() {
 
         ScreenManager.init();
-        var main = new MainScreen( $('#screen_main') );
-        ScreenManager.addScreen( main ); // Add Main Screen
+        ScreenManager.addScreen( new MainScreen( $('#screen_main') ) );
         ScreenManager.showScreen( ScreenManager.SCREEN_MAIN );
 
         /*

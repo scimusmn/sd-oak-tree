@@ -161,25 +161,25 @@ p, h3, h2, h1, span {
   color: #4C272A;
 }
 h1 {
-  font-family: 'futurats-demibold', Helvetica, sans-serif;
+  font-family: 'futurats-demiboldregular', Helvetica, sans-serif;
   font-size: 35px;
 }
 h1.es {
   font-size: 30px;
 }
 h2 {
-  font-family: 'futurats-light', Helvetica, sans-serif;
+  font-family: 'futurats-lightregular', Helvetica, sans-serif;
   font-size: 33px;
   font-weight: 200;
   font-style: italic;
 }
 h3 {
-  font-family: 'futurats-medium', Helvetica, sans-serif;
+  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 24px;
 }
 p {
-  font-family: 'futurats-medium', Helvetica, sans-serif;
+  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
   font-size: 24px;
 }
 p.es {
@@ -242,7 +242,9 @@ p.es {
 
 /* Main Screen */
 #screen_main {
-  background-color: #132D33;
+
+  background-color: #004a80;
+  /*background-color: #132D33;*/
 }
 
 /* Left-side content */
@@ -255,8 +257,8 @@ p.es {
 #main_nav img,
 #main_nav svg {
   position: absolute;
-  left: 60px;
-  top: 5px;
+  left: 50px;
+  top: 10px;
 }
 #main_nav button {
   margin: 5px;
@@ -264,7 +266,7 @@ p.es {
 
 
 /* Voronoi SVG - Uncomment for debugging */
-#main_nav polygon{
+/*#main_nav polygon{
   fill: rgba(210,255,220, 0.2);
   stroke:#444;
   stroke-width:1;
@@ -279,7 +281,7 @@ p.es {
 }
 #main_nav polygon:active {
   fill: rgba(235,245,235, 0.8);
-}
+}*/
 
 .content-right{
 
