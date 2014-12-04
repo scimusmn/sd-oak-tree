@@ -157,31 +157,50 @@ p, h3, h2, h1, span {
   font-family: 'futurats-lightregular', Helvetica, sans-serif;
   line-height: 1.2em;
 }
+
 .es {
   color: #4C272A;
 }
+
 h1 {
   font-family: 'futurats-demiboldregular', Helvetica, sans-serif;
   font-size: 38px;
 }
+
 h1.es {
   font-size: 34px;
 }
+
 h2 {
   font-family: 'futurats-lightregular', Helvetica, sans-serif;
-  font-size: 33px;
+  font-size: 28px;
   font-weight: 200;
   font-style: italic;
 }
+
+#intro_container h2 {
+  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+}
+
+#intro_container p {
+  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
 h3 {
   font-family: 'futurats-mediumregular', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 24px;
 }
+
 p {
   font-family: 'futurats-mediumregular', Helvetica, sans-serif;
   font-size: 24px;
 }
+
 p.es {
   font-size: 21px;
 }
@@ -284,7 +303,6 @@ p.es {
 }*/
 
 .content-right{
-
   position: absolute;
   right: 0px;
   width: 443px;
@@ -301,13 +319,28 @@ p.es {
   margin: 10px 30px 20px 30px;
 }
 
-.content-right h2,
-.content-right h3,
-.content-right p {
-
-  margin: 20px 40px;
-
+.content-right h2#scientific_name {
+  margin: -10px 30px 30px 30px;
 }
+
+.content-right h2.en {
+  margin: 20px 30px 10px 30px;
+}
+
+.content-right h2.es {
+  margin: 10px 30px 20px 30px;
+}
+
+.content-right p {
+  margin: 10px 30px 20px 30px;
+}
+
+/*.content-right h3,*/
+/*.content-right p {*/
+
+  /*margin: 20px 40px;*/
+
+/*}*/
 
 #home_bar {
 
