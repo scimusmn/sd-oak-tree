@@ -35,7 +35,7 @@
                 </text>
                 <text id="scientific">Picoides nuttallii</text>
                 <text id="description">
-                    <en>This woodpecker lives mainly in oak woodlands, but it doesn’t eat acorns. The Nuttall’s Woodpecker prefers to feed on a delectable meal of insect larvae.</en>
+                    <en><![CDATA[This woodpecker lives mainly in<br>oak woodlands, but it doesn’t eat acorns. The Nuttall’s Woodpecker prefers to feed on a delectable<br>meal of insect larvae.]]></en>
                     <es>Este carpintero vive principalmente en bosques de robles, pero no come bellotas. El carpintero californiano prefiere alimentarse de una deleitable comida que consiste de larvas de insectos.</es>
                 </text>
             </specimen>
@@ -105,7 +105,7 @@
                 </text>
                 <text id="scientific">Regulus calendula</text>
                 <text id="description">
-                    <en>This Ruby-crowned Kinglet is a winter visitor to our mountain forests. While here, it spends its time darting from oak tree to oak tree in search of insects crawling in the leaves and twigs.</en>
+                  <en><![CDATA[This Ruby-crowned Kinglet is a<br>winter visitor to our mountain forests.<br>While here, it spends its time darting from oak tree to oak tree in search<br>of insects crawling in the leaves<br>and twigs.]]></en>
                     <es>Este reyezuelo de rojo llega de visita en invierno a nuestros bosques de las montañas. Cuando está aquí, pasa el tiempo yendo velozmente de roble en roble en busca de insectos que andan por las hojas y las ramas.</es>
                 </text>
             </specimen>
@@ -119,7 +119,7 @@
                 </text>
                 <text id="scientific">Patagioenas fasciata</text>
                 <text id="description">
-                    <en>That’s no bat you’re looking at. The resourceful Band-tailed Pigeon sometimes hangs upside down from branches to collect hard-to-reach acorns before gulping them down whole.</en>
+                  <en><![CDATA[That’s no bat you’re looking at.<br>The resourceful Band-tailed Pigeon sometimes hangs upside down from branches to collect hard-to-reach acorns before gulping them<br>down whole.]]></en>
                     <es>Lo que estás viendo no es ningún murciélago. La habilidosa paloma de collar a veces se cuelga de cabeza desde las ramas para recolectar bellotas difíciles de alcanzar antes de tragárselas enteras.</es>
                 </text>
             </specimen>
@@ -229,7 +229,7 @@
                     <en>Oak Mistletoe</en>
                     <es>Toji</es>
                 </text>
-                <text id="scientific">Phoradendron leucarpum ssp. tomentosum</text>
+                <text id="scientific"><![CDATA[Phoradendron leucarpum <span class="roman">ssp.</span> tomentosum]]></text>
                 <text id="description">
                     <en>Have you ever seen a clump of green leaves on an otherwise leafless oak tree? Chances are what you saw was Oak Mistletoe. This flowering plant drains the oak of its nutrients and water by digging its roots into the branches of the tree.</en>
                     <es>¿Alguna vez has visto un macizo de hojas verdes en un roble por lo demás sin hojas? Lo más probable es que hayas visto toji. Esta planta floreciente drena al roble de sus nutrientes y agua, excavando con sus raíces dentro de las ramas del árbol.</es>
@@ -357,8 +357,8 @@
                 </text>
                 <text id="scientific"> </text>
                 <text id="description">
-                    <en>In southern California, Native Americans harvested acorns in the fall to sustain them through winter and beyond. Keeping acorns in larger granaries, such as the one you see here, protected them from scavengers. Acorns are rich in fat, which the body needs but is difficult to come by in the wild. However, there’s a catch: they contain tannic acid, which is bitter and potentially poisonous. So making acorns edible is a lot of work—but worth the effort.</en>
-                    <es>En el sur de California, los americanos nativos cosechaban bellotas en el otoño para el sustento necesario a lo largo y después del invierno. Guardar bellotas en graneros más grandes, tales como el que ves aquí, las protegía de los carroñeros</es>
+                  <en><![CDATA[<span class="smaller">Native Americans harvested acorns in the fall to sustain them through winter and beyond. Keeping acorns in larger granaries protected them from scavengers. Acorns are rich in fat, which is difficult to come by in the wild. But they contain tannic acid, which is bitter and potentially poisonous. So making acorns edible is a lot of work—but worth the effort.</span>]]></en>
+                  <es><![CDATA[<span class="smaller">Los americanos nativos cosechaban bellotas en el otoño para el sustento necesario a lo largo y después del invierno. Guardar bellotas en graneros más grandes las protegía de los carroñeros. Las bellotas son ricas en grasas pero son difíciles de encontrar en el mundo natural. Pero contienen ácido tánico, que es amargo y potencialmente venenoso. Por lo tanto, lograr que las bellotas sean comestibles requiere mucho trabajo, pero el esfuerzo vale la pena.</span>]]></es>
                 </text>
             </specimen>
             <!-- ============== -->

@@ -168,14 +168,18 @@ h1 {
 }
 
 h1.es {
-  font-size: 34px;
+  font-size: 38px;
 }
 
 h2 {
   font-family: 'futurats-lightregular', Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 200;
   font-style: italic;
+}
+
+h2 span.roman {
+  font-style: normal;
 }
 
 #intro_container h2 {
@@ -203,6 +207,16 @@ p {
 
 p.es {
   font-size: 21px;
+}
+
+p .smaller {
+  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+p.es .smaller {
+  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 
@@ -312,15 +326,15 @@ p.es {
 }
 
 .content-right h1 {
-  margin: 30px 30px 15px 30px;
+  margin: 15px 30px 7px 30px;
 }
 
 .content-right h1.es {
-  margin: 10px 30px 20px 30px;
+  margin: 0px 30px 20px 30px;
 }
 
 .content-right h2#scientific_name {
-  margin: -10px 30px 30px 30px;
+  margin: -10px 30px 20px 30px;
 }
 
 .content-right h2.en {
