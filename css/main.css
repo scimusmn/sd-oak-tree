@@ -164,34 +164,26 @@ p, h3, h2, h1, span {
 
 h1 {
   font-family: 'futurats-demiboldregular', Helvetica, sans-serif;
-  font-size: 38px;
+  font-size: 34px;
 }
 
 h1.es {
-  font-size: 38px;
+  font-size: 30px;
 }
 
 h2 {
   font-family: 'futurats-lightregular', Helvetica, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 200;
   font-style: italic;
 }
 
+h2.es {
+  font-size: 22px;
+}
+
 h2 span.roman {
   font-style: normal;
-}
-
-#intro_container h2 {
-  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
-  font-size: 28px;
-  font-style: normal;
-}
-
-#intro_container p {
-  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
 }
 
 h3 {
@@ -217,6 +209,48 @@ p .smaller {
 p.es .smaller {
   font-family: 'futurats-mediumregular', Helvetica, sans-serif;
   font-size: 18px;
+}
+
+#intro_container h1 {
+  font-size: 44px;
+  font-style: normal;
+  line-height: 1em;
+}
+
+
+#intro_container h1.es {
+  font-size: 38px;
+}
+
+#intro_container h2 {
+  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+}
+
+#intro_container h2.es {
+  font-size: 24px;
+}
+
+#intro_container p {
+  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#intro_container .es p {
+  font-size: 18px;
+}
+
+#intro_container h1.en,
+#intro_container h1.es,
+#intro_container h2.en,
+#intro_container h2.es {
+  line-height: 1em;
+}
+
+#intro_container p {
+  /*line-height: 1.2em;*/
 }
 
 
@@ -326,35 +360,40 @@ p.es .smaller {
 }
 
 .content-right h1 {
-  margin: 15px 30px 7px 30px;
+  margin: 15px 40px 0px 40px;
+}
+
+.content-right h1.en {
+  margin-top:30px;
 }
 
 .content-right h1.es {
-  margin: 0px 30px 20px 30px;
+  margin: 30px 40px 0px 40px;
+}
+
+.content-right #common_name.es {
+  margin: 0px 40px 20px 40px;
 }
 
 .content-right h2#scientific_name {
-  margin: -10px 30px 20px 30px;
+  margin: -15px 40px 40px 40px;
 }
 
 .content-right h2.en {
-  margin: 20px 30px 10px 30px;
+  margin: 10px 40px 10px 40px;
 }
 
 .content-right h2.es {
-  margin: 10px 30px 20px 30px;
+  margin: 11px 40px 0px 40px;
 }
 
 .content-right p {
-  margin: 10px 30px 20px 30px;
+  margin: 35px 40px 0px 40px;
 }
 
-/*.content-right h3,*/
-/*.content-right p {*/
-
-  /*margin: 20px 40px;*/
-
-/*}*/
+.content-right .es p {
+  margin: 35px 40px 20px 40px;
+}
 
 #home_bar {
 
