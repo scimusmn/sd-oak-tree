@@ -156,6 +156,7 @@ body {
 p, h3, h2, h1, span {
   font-family: 'futurats-lightregular', Helvetica, sans-serif;
   line-height: 1.2em;
+  letter-spacing: 0.015em;
 }
 
 .es {
@@ -193,7 +194,7 @@ h3 {
 }
 
 p {
-  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
+  font-family: 'futurats-lightregular', Helvetica, sans-serif;
   font-size: 24px;
 }
 
@@ -202,13 +203,18 @@ p.es {
 }
 
 p .smaller {
-  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
   font-size: 20px;
 }
 
 p.es .smaller {
-  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
-  font-size: 18px;
+  font-size:20px;
+}
+
+#intro_container h1.en,
+#intro_container h1.es,
+#intro_container h2.en,
+#intro_container h2.es {
+  line-height: 1em;
 }
 
 #intro_container h1 {
@@ -223,9 +229,10 @@ p.es .smaller {
 }
 
 #intro_container h2 {
-  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
+  font-family: 'futurats-lightregular', Helvetica, sans-serif;
   font-size: 26px;
   font-style: normal;
+  line-height: 1.2em !important;
 }
 
 #intro_container h2.es {
@@ -233,24 +240,70 @@ p.es .smaller {
 }
 
 #intro_container p {
-  font-family: 'futurats-mediumregular', Helvetica, sans-serif;
+  font-family: 'futurats-lightregular', Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 #intro_container .es p {
-  font-size: 18px;
+  font-size: 19px;
 }
 
-#intro_container h1.en,
-#intro_container h1.es,
-#intro_container h2.en,
-#intro_container h2.es {
-  line-height: 1em;
+.content-right{
+  position: absolute;
+  right: 0px;
+  width: 443px;
+  height: 100%;
+  background-color: #E2D9C2;
+  box-shadow: -5px -3px 15px rgba(22,22,22,0.3);
 }
 
-#intro_container p {
-  /*line-height: 1.2em;*/
+.content-right h1,
+.content-right h2,
+.content-right p {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.content-right h1 {
+  margin-top:15px;
+  margin-bottom: 0px;
+}
+
+.content-right h1.en {
+  margin-top:30px;
+}
+
+.content-right h1.es {
+  margin-top:30px;
+  margin-bottom: 0px;
+}
+
+.content-right #common_name.es {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.content-right h2#scientific_name {
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+.content-right h2.en {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-right h2.es {
+  margin: 11px 40px 0px 40px;
+}
+
+.content-right p {
+  margin: 35px 40px 0px 40px;
+}
+
+.content-right .es p {
+  margin: 35px 40px 20px 40px;
 }
 
 
@@ -349,51 +402,6 @@ p.es .smaller {
 #main_nav polygon:active {
   fill: rgba(235,245,235, 0.8);
 }*/
-
-.content-right{
-  position: absolute;
-  right: 0px;
-  width: 443px;
-  height: 100%;
-  background-color: #E2D9C2;
-  box-shadow: -5px -3px 15px rgba(22,22,22,0.3);
-}
-
-.content-right h1 {
-  margin: 15px 40px 0px 40px;
-}
-
-.content-right h1.en {
-  margin-top:30px;
-}
-
-.content-right h1.es {
-  margin: 30px 40px 0px 40px;
-}
-
-.content-right #common_name.es {
-  margin: 0px 40px 20px 40px;
-}
-
-.content-right h2#scientific_name {
-  margin: -15px 40px 40px 40px;
-}
-
-.content-right h2.en {
-  margin: 10px 40px 10px 40px;
-}
-
-.content-right h2.es {
-  margin: 11px 40px 0px 40px;
-}
-
-.content-right p {
-  margin: 35px 40px 0px 40px;
-}
-
-.content-right .es p {
-  margin: 35px 40px 20px 40px;
-}
 
 #home_bar {
 
