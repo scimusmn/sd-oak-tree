@@ -172,6 +172,15 @@ h1.es {
   font-size: 30px;
 }
 
+h1 .smaller {
+  font-size: 25px;
+  font-family: 'futurats-demiboldregular', Helvetica, sans-serif;
+}
+
+h1.es .smaller {
+  font-size:22px;
+}
+
 h2 {
   font-family: 'futurats-lightregular', Helvetica, sans-serif;
   font-size: 24px;

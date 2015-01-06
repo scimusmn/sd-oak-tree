@@ -40,16 +40,16 @@
                 </text>
             </specimen>
             <!-- ================= -->
-            <!-- Western Scrub Jay -->
+            <!-- Western Scrub-jay -->
             <!-- ================= -->
             <specimen id="western_scrub_jay" img="img/western_scrub_jay.png">
                 <text id="common">
-                    <en>Western Scrub Jay</en>
+                    <en>Western Scrub-jay</en>
                     <es>Chara pechirrayada</es>
                 </text>
                 <text id="scientific">Aphelocoma californica</text>
                 <text id="description">
-                    <en>Unlike the Acorn Woodpecker, which stores acorns in trees, the Western Scrub Jay puts them in the ground. This benefits the oak tree because some of the acorns the Scrub Jay doesn’t eat will sprout and grow into trees.</en>
+                    <en>Unlike the Acorn Woodpecker, which stores acorns in trees, the Western Scrub-jay puts them in the ground. This benefits the oak tree because some of the acorns the Scrub-jay doesn’t eat will sprout and grow into trees.</en>
                     <es>A diferencia del carpintero bellotero que almacena bellotas en los árboles, el chara pechirrayada las deposita en el suelo. Esto beneficia al roble porque algunas de las bellotas que el chara pechirrayada no come brotarán y llegarán a ser árboles.</es>
                 </text>
             </specimen>
@@ -198,13 +198,13 @@
             <!-- ======================== -->
             <specimen id="pacific_tent_caterpillar" img="img/pacific_tent_caterpillar.png">
                 <text id="common">
-                    <en>Pacific Tent Caterpillar</en>
-                    <es>Oruga defoliadora de pacifico</es>
+                    <en><![CDATA[<span class="smaller">Pacific Tent Caterpillar</span>]]></en>
+                    <es><![CDATA[<span class="smaller">Oruga defoliadora de pacifico</span>]]></es>
                 </text>
                 <text id="scientific">Malacosoma constricta</text>
                 <text id="description">
-                    <en>This little white glob doesn’t look like much. But inside, hundreds of Pacific Tent Caterpillar eggs wait for spring, when new larvae will hatch and start munching on oak leaves.</en>
-                    <es>Este pequeño glóbulo blanco no parece gran cosa. Pero por dentro, cientos de huevos de la oruga defoliadora de pacifico esperan la primavera cuando nuevas larvas nacerán y comenzarán a masticar las hojas de los robles.</es>
+                    <en>This white glob doesn’t look like much. But inside, hundreds of Pacific Tent Caterpillar eggs wait for spring, when new larvae will hatch and start munching on oak leaves.</en>
+                    <es>Este glóbulo blanco no parece gran cosa. Pero por dentro, cientos de huevos de la oruga defoliadora de pacifico esperan la primavera cuando nuevas larvas nacerán y comenzarán a masticar las hojas de los robles.</es>
                 </text>
             </specimen>
             <!-- ============== -->
@@ -250,12 +250,12 @@
                 </text>
             </specimen>
             <!-- ======================== -->
-            <!-- Large-blotched Ensantina -->
+            <!-- Large-blotched ensatina -->
             <!-- ======================== -->
             <specimen id="large_blotched_ensatina" img="img/large_blotched_ensatina.png">
                 <text id="common">
-                    <en>Large-blotched Ensantina</en>
-                    <es>Ensatina manchas-grandes</es>
+                    <en><![CDATA[<span class="smaller">Large-blotched Ensatina</span>]]></en>
+                    <es><![CDATA[<span class="smaller">Ensatina manchas-grandes</span>]]></es>
                 </text>
                 <text id="scientific">Ensatina klauberi</text>
                 <text id="description">
@@ -268,8 +268,8 @@
             <!-- ========================= -->
             <specimen id="southern_alligator_lizard" img="img/southern_alligator_lizard.png">
                 <text id="common">
-                    <en>Southern Alligator Lizard</en>
-                    <es>Lagarto escorpión sureño</es>
+                    <en><![CDATA[<span class="smaller">Southern Alligator Lizard</span>]]></en>
+                    <es><![CDATA[<span class="smaller">Lagarto escorpión sureño</span>]]></es>
                 </text>
                 <text id="scientific">Elgaria multicarinata</text>
                 <text id="description">
@@ -301,7 +301,7 @@
                 </text>
                 <text id="scientific">Sorex ornatus</text>
                 <text id="description">
-                    <en>In the wild you might hear this Ornate Shrew before you see it. It has a fast metabolism, so it’s always on the move, scurrying through the leaf litter in search of food.</en>
+                    <en><![CDATA[In the wild you might hear this Ornate Shrew before you see it.<br>It has a fast metabolism, so it’s always on the move, scurrying through the leaf litter in search of&nbsp;food.]]></en>
                     <es>En el mundo natural, es posible que oigas a esta musaraña ornamentada antes de verla. Tiene un metabolismo muy veloz, por lo que siempre está en movimiento, escabulléndose por la hojarasca en busca de comida.</es>
                 </text>
             </specimen>
@@ -324,12 +324,12 @@
             <!-- ========================= -->
             <specimen id="common_greensheild_lichen" img="img/common_greensheild_lichen.png">
                 <text id="common">
-                    <en>Common Greenshield Lichen</en>
-                    <es>Liquen</es>
+                    <en><![CDATA[<span class="smaller">Common Greenshield Lichen</span>]]></en>
+                    <es><![CDATA[<span class="smaller">Liquen</span>]]></es>
                 </text>
                 <text id="scientific">Flavoparmelia caperata</text>
                 <text id="description">
-                    <en>Lichens and oak trees depend on one another. An oak is a good place for lichens to grow, and the lichens help shield the tree against pests. If you see an oak tree, it’s likely you’ll find lichens growing on it.</en>
+                    <en><![CDATA[Lichens and oak trees depend on one another. An oak is a good place for lichens to grow, and the lichens help shield the tree against pests. If you see an oak tree, it’s likely you’ll find lichens growing on&nbsp;it.]]></en>
                     <es>Los líquenes y los robles dependen el uno del otro. Un roble es un buen lugar para que crezcan líquenes, y los líquenes ayudan a proteger al árbol contra las plagas . Si ves un roble, es probable que encuentres líquenes creciendo sobre él.</es>
                 </text>
             </specimen>
