@@ -35,12 +35,10 @@ require(['jquery', 'net/AppData', 'net/Screensaver', 'net/ui/ScreenManager', 'ne
         ScreenManager.addScreen( new MainScreen( $('#screen_main') ) );
         ScreenManager.showScreen( ScreenManager.SCREEN_MAIN );
 
-        /*
-        var ss = new Screensaver(5, 'img/ss.mp4', function() {
+        var ss = new Screensaver(180, 'img/screensaver.webm', function() {
             //On sleep
             ScreenManager.showScreen(ScreenManager.SCREEN_MAIN);
         });
-        */
 
     }
 

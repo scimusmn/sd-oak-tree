@@ -31,16 +31,18 @@ define(['videojs'], function( videojs ){
     */
     Screensaver.prototype.createVideo = function( videoSrc ) {
 
-        //Create video tag
-        var videoTag = '<video id="screensaver_video" style="position:fixed; top:0px; left:0px; z-index:999;" class="video-js vjs-default-skin vjs-big-play-centered"><source src="'+videoSrc+'" type="video/mp4" /></video>';
+        //Create video tag;
+        var videoTag = '<video id="screensaver_video" style="position:fixed; width:100%; height:100%; top:0px; left:0px; z-index:999;" class="video-js vjs-default-skin vjs-big-play-centered"><source src="'+videoSrc+'" type="video/webm" /></video>';
         var videoOptions = { "controls": false, "autoplay": false, "loop": "true", "preload": "auto" };
 
         //Append to html
         $('body').append( videoTag );
 
         //Initialize player
+        var thisRef = this;
         this.videoPlayer = videojs("screensaver_video", videoOptions, function() {
             // Player (this) is initialized and ready.
+            thisRef.awake();
         });
 
     }
