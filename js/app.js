@@ -37,7 +37,7 @@ require(['jquery', 'net/AppData', 'net/Screensaver', 'net/ui/ScreenManager', 'ne
 
         var ss = new Screensaver(180, 'img/screensaver.webm', function() {
             //On sleep
-            ScreenManager.showScreen(ScreenManager.SCREEN_MAIN);
+            ScreenManager.screens[0].transitionOutFeature();
         });
 
     }

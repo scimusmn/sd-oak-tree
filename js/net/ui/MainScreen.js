@@ -34,7 +34,7 @@ define([ 'net/AppData', 'net/ui/ScreenManager', 'net/ui/VoronoiLayer', 'tween' ]
         AppData.setFeatureSpecimen( specId );
         $('#specimen_display').attr('src', AppData);
 
-        //TODO: Set text and image from xml
+        //Set text and image from xml
         var specConfig = $(AppData.configXML).find('specimens specimen[id="'+specId+'"]').first();
 
         var imgSrc = $(specConfig).attr("img");
