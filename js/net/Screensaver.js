@@ -21,6 +21,12 @@ define(['videojs'], function( videojs ){
         // Zero the idle timer on any movement.
         $('body').on('touchstart keypress mousemove mousedown', function(){ thisRef.anyAction() });
 
+        //
+        // Prevent users from clicking and dragging
+        //
+        // TODO - Put this in the right place, aka not the screensaver fucntion.
+        $('body').on('dragstart', function(e){ e.preventDefault(); });
+
         //Setup video screensaver
         this.createVideo( videoSrc );
 
