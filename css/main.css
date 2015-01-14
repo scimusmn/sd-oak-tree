@@ -114,7 +114,7 @@ body {
   user-select: none;
 
   /* disable I-beam cursor over text */
-  cursor: default;
+  cursor: none;
 
   width: 1366px;
   height: 768px;
