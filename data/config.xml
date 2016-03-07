@@ -64,7 +64,7 @@
                 <text id="scientific">Baeolophus inornatus</text>
                 <text id="description">
                     <en>Oak Titmice work in pairs to build their nests. The female is in charge of finding a suitable hole in an oak tree and building the nest, while the male follows her around and feeds her while she works.</en>
-                    <es>Los carboneros sencillos trabajan de a dos para construir sus nidos. La hembra está encargada de encontrar un hueco adecuado en un roble y de la construcción del nido, mientras el macho la sigue y le da de comer mientras ella trabaja.</es>
+                    <es>Los carboneros sencillos trabajan en parejas para construir sus nidos. La hembra está encargada de encontrar un hueco adecuado en un roble y de la construcción del nido, mientras el macho la sigue y le da de comer mientras ella trabaja.</es>
                 </text>
             </specimen>
             <!-- ================ -->
@@ -171,12 +171,12 @@
             <specimen id="california_gall_wasp" img="img/california_gall_wasp.png">
                 <text id="common">
                     <en>California Gall Wasp</en>
-                    <es>Avispa de la agalla del roble commún</es>
+                    <es>Avispa de la agalla del roble común</es>
                 </text>
                 <text id="scientific">Andricus quercuscalifornicus</text>
                 <text id="description">
                     <en>The female California Gall Wasp deposits her eggs on oak trees. Once the egg hatches, plant tissue will form a structure, called a gall, around the larva. The gall will protect the larva and serve as its food.</en>
-                    <es>La avispa de la agalla del roble commún hembra deposita sus huevos en los robles. Una vez que el huevo eclosiona, el tejido de la planta forma una estructura llamada vesícula alrededor de la larva. La vesícula protege la larva y sirve de alimento.</es>
+                    <es>La avispa de la agalla del roble común hembra deposita sus huevos en los robles. Una vez que el huevo eclosiona, el tejido de la planta forma una estructura llamada agalla alrededor de la larva. La agalla protege la larva y sirve de alimento.</es>
                 </text>
             </specimen>
             <!-- ========================= -->
